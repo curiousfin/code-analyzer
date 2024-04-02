@@ -2,6 +2,7 @@ fix: fix-cs fix-rector fix-csniff
 
 fix-cs:
 	./vendor/bin/php-cs-fixer --config=.php-cs-fixer.dist.php fix $(p)
+#	p=path make fix-cs
 fix-rector:
 	./vendor/bin/rector --config=rector.php process $(p) --debug
 fix-csniff:

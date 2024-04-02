@@ -23,6 +23,7 @@ return (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)
     ->setRules([
         '@PSR12' => true,
+        '@PSR2' => true,
         '@Symfony' => true,
         '@Symfony:risky' => true,
         '@PHP82Migration' => true,
@@ -36,6 +37,14 @@ return (new PhpCsFixer\Config())
         'single_line_empty_body' => false, // this!
         'declare_strict_types' => true,
         'no_unset_on_property' => false,
+        'cast_spaces' => false,
+        'concat_space' => ['spacing' => 'one'],
+        'multiline_whitespace_before_semicolons' => true,
+'no_unused_imports' => true,
+//        'phpdoc_no_empty_return' => true,
+//        'no_empty_phpdoc' => true,
+        //        'align_multiline_comment' => true,
+//        'multiline_whitespace_before_semicolons' => true,
 //        'final_class' => true,
 //        'trailing_comma_in_multiline' => true,
     ])
