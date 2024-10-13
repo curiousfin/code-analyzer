@@ -10,7 +10,7 @@ fix-csniff:
 
 check: check-md check-lint check-cs
 check-md:
-	./vendor/bin/phpmd $(p) json codesize,unusedcode
+	./vendor/bin/phpmd $(p) ansi codesize,unusedcode,naming,design,controversial,cleancode
 check-lint:
 	./vendor/bin/phplint
 check-cs:
